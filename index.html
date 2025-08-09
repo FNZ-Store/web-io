@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Developer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            margin: 0;
+            padding: 0;
+            color: white;
+            animation: bgmove 10s infinite alternate;
+        }
+
+        @keyframes bgmove {
+            0% { background-position: left; }
+            100% { background-position: right; }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .foto {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .foto img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #00f2fe;
+            object-fit: cover;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .bio {
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+            background: rgba(0, 242, 254, 0.5);
+        }
+
+        .social {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social a:hover {
+            transform: scale(1.2);
+            color: #00f2fe;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="foto">
+            <img src="https://via.placeholder.com/160" alt="Foto Developer">
+        </div>
+        <h1>Nama Developer</h1>
+        <p class="bio">Saya adalah seorang Web Developer yang berpengalaman membuat aplikasi berbasis web dengan teknologi modern. Fokus pada desain responsif, performa tinggi, dan pengalaman pengguna yang optimal.</p>
+        
+        <h2>Keahlian</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MySQL</div>
+        </div>
+
+        <h2>Kontak</h2>
+        <div class="social">
+            <a href="mailto:email@example.com">📧 Email</a>
+            <a href="https://github.com/" target="_blank">💻 GitHub</a>
+            <a href="https://linkedin.com/" target="_blank">🔗 LinkedIn</a>
+            <a href="https://instagram.com/" target="_blank">📸 Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
